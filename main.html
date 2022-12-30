@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Blendr Juicery</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Best Juicery In Town">
+    <link href="main.css" type="text/css" rel="stylesheet">
+    <script src="main.js"></script>
+  </head>
+  <body>
+      <nav>
+        <div class="main-nav-wrap">
+          <div class="logo-wrap">
+            <a href="main.html"><img src="img/blendr_logo_nav.png"></a>
+          </div>
+          <ul class="main-nav" id="main-nav">
+            <li><a href="main.html">HOME</a></li>
+            <li><a href="about.html">ABOUT</a></li>
+            <li><a href="juice.html">JUICE</a></li>
+            <li><a href="location.html">LOCATION</a></li>
+            <li><a href="contact.html">CONTACT</a></li>
+          </ul>
+        </div>
+        <div class="mobile-nav-wrap">
+          <div class="logo-wrap">
+            <a href="main.html"><img src="img/blendr_logo_nav.png"></a>
+            <div class="icon-wrap">
+              <div class="hamb-icon" id="hamb-icon" onclick="displayNav()"><img src="img/hamburger.png"></div>
+              <div class="x-icon" id="x-icon" onclick="closeNav()"><img src="img/x.png"></div>
+            </div>
+          </div>
+          <ul class="mobile-nav" id="mobile-nav">
+            <li><a href="main.html">HOME</a></li>
+            <li><a href="about.html">ABOUT</a></li>
+            <li><a href="juice.html">JUICE</a></li>
+            <li><a href="location.html">LOCATION</a></li>
+            <li><a href="contact.html">CONTACT</a></li>
+          </ul>
+        </div>
+      </nav>
+
+      <div class="hero-wrap">
+        <img src="img/hero.webp">
+        <div class="hero-text">
+          <h3>Finally, juice right for you</h3>
+          <p>INSANELY DELICIOUS.
+            POWERFULLY NUTRITIOUS.
+            ENTIRELY SUSTAINABLE.</p>
+          <a href="juice.html">click to explore</a>
+        </div>
+      </div>
+
+      <div class="benefits-wrap">
+        <div class="benefits-block">
+          <img src="img/cold.png">
+          <h3>Cold Pressed</h3>
+          <p>The only juicing method to give you the right nutrients, 100% natural</p>
+        </div>
+        <div class="benefits-block">
+          <img src="img/organic.png">
+          <h3>Organic</h3>
+          <p>We source our fruits and from organic local farms to maximize flavor and freshness</p>
+        </div>
+        <div class="benefits-block">
+          <img src="img/lighning.png">
+          <h3>Energy</h3>
+          <p>All of our blends of natural fruits and vegetables promises 
+            you to energize you like nothing you’ve experienced before </p>
+        </div>
+      </div>
+
+
+      <div class="popular-wrap">
+        <div class="popular-hero">
+          <h3>Most Popular Juice Blends</h3>
+          <p>If you get any of these juices, you will not be dissapointed, 
+            they have been carefully crafted by our juice alchemists to maximize freshness
+            and get the best flavor possible</p>
+        </div>
+        <div class="juice-block">
+          <div class="circles">
+            <img class="pomelo-1" src="img/pomelo-circle1.png">
+            <img class="pomelo-2" src="img/pomelo-circle2.png">
+            <img class="pomelo-3" src="img/pomelo-circle3.png">
+          </div>
+          <div class="juice-wrap">
+            <div class="product-block">
+              <img src="img/pomelo-home.png">
+            </div>
+            <div class="juice-info">
+              <h3 class="juice-name">Pink Pomelo</h3>
+              <p class="juice-price">$11.00</p>
+              <p class="juice-ingredients">Grapefruit, Pear, Mint, Lime</p>
+              <p class="juice-description">Grapefruits hefty doses of Vitamin A and C 
+                are powerful immune boosters. With the combination of Pear, Mint, and Lime, 
+                this well balanced juice is sure to awaken not only your tastebuds but fire 
+                up your digestive system and metabolism.</p>
+              <a href="juice.html">More Juices</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="juice-block">
+          <div class="circles">
+            <img class="banana-1" src="img/banana-circle1.png">
+            <img class="banana-2" src="img/banana-circle2.png">
+            <img class="banana-3" src="img/banana-circle3.png">
+          </div>
+          <div class="juice-wrap">
+            <div class="product-block">
+              <img src="img/banana-home.png">
+            </div>
+            <div class="juice-info">
+              <h3 class="juice-name banana">Banana Cashew</h3>
+              <p class="juice-price">$11.00</p>
+              <p class="juice-ingredients">Activated Cashews, Filtered Water, Banana, 
+                Medjool Dates, Cinnamon, Vanilla Bean Powder, Himalayan Pink Salt</p>
+              <p class="juice-description">This creamy banana treat is not only delicious, 
+                but is nutritious, and keeps you feeling full and fueled. Bananas are a great 
+                source of fiber, antioxidants, potassium, vitamin B6, and manganese. Add to 
+                smoothies, baked goods, coffee, or enjoy it by itself.</p>
+              <a href="juice.html">More Juices</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="juice-block">
+          <div class="circles">
+            <img class="matcha-1" src="img/matcha-circle1.png">
+            <img class="matcha-2" src="img/matcha-circle2.png">
+            <img class="matcha-3" src="img/matcha-circle3.png">
+          </div>
+          <div class="juice-wrap">
+            <div class="product-block">
+              <img src="img/matcha-home.png">
+            </div>
+            <div class="juice-info">
+              <h3 class="juice-name matcha">Matcha Milk</h3>
+              <p class="juice-price">$11.00</p>
+              <p class="juice-ingredients">Activated Cashews, Medjool Dates, 
+                Ceremonial Matcha, Vanilla Bean, Himalayan Pink Salt</p>
+              <p class="juice-description">Your favorite matcha latte, bottled up. 
+                This earthy green leaf powder, matcha, contains a wide range bioavailable 
+                nutrients, minerals, and Vitamin D.</p>
+              <a href="juice.html">More Juices</a>
+            </div>
+          </div>
+        </div>
+      
+      </div>
+
+      <div class="location-wrap">
+        <div class="location-text">
+          <h3>Come Visit Us</h3>
+          <p>1310 W Spruce St, Deming, NM 88030</p>
+          <p>Phone:<a href="tel:+">(656) 967-6548</a></p>
+        </div>
+        <div class="map">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d432175.6101323363!2d-108.04406091944355!3d32.194206641777185!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x86dec72e7c72f469%3A0x7ac9c34151df53bb!2sLuna%20County%2C%20NM!5e0!3m2!1sen!2sus!4v1648948972703!5m2!1sen!2sus" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+      </div>
+
+      <footer>
+        <div class="footer-hero">We give our local communities an elevated daily dose of wellness 
+          by providing the most delicious, nutrient-dense products nature has to offer.</div>
+        <div class="footer-main">
+          <p><a href="contact.html">Contact</a></p>
+          <p><a href="termsofservice.html">Terms Of Service</a></p>
+          <p><a href="privacy.html">Privacy Notice</a></p>
+          <p><a href="faq.html"> FAQ</a></p>
+          <p><a href="about.html">About</a></p>
+          <p><a href="juice.html">Juices</a></p>
+        </div>
+        <div class="footer-bottom">Copyright © 2022 Blendr Juice Shop. | Website created By Joe Neve</div>
+      </footer>
+ 
+  </body>
+</html>

@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Contact</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Contact">
+    <link href="contact.css" type="text/css" rel="stylesheet">
+    <!--jquery-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <!--jquery form validation plug in-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.1/jquery.validate.min.js"></script>
+    <!--the external javascript file-->
+    <script src="contact.js"></script>
+  </head>
+  <body>
+      <nav>
+        <div class="main-nav-wrap">
+          <div class="logo-wrap">
+            <a href="main.html"><img src="img/blendr_logo_nav.png"></a>
+          </div>
+          <ul class="main-nav" id="main-nav">
+            <li><a href="main.html">HOME</a></li>
+            <li><a href="about.html">ABOUT</a></li>
+            <li><a href="juice.html">JUICE</a></li>
+            <li><a href="location.html">LOCATION</a></li>
+            <li><a href="contact.html">CONTACT</a></li>
+          </ul>
+        </div>
+        <div class="mobile-nav-wrap">
+          <div class="logo-wrap">
+            <a href="main.html"><img src="img/blendr_logo_nav.png"></a>
+            <div class="icon-wrap">
+              <div class="hamb-icon" id="hamb-icon" onclick="displayNav()"><img src="img/hamburger.png"></div>
+              <div class="x-icon" id="x-icon" onclick="closeNav()"><img src="img/x.png"></div>
+            </div>
+          </div>
+          <ul class="mobile-nav" id="mobile-nav">
+            <li><a href="main.html">HOME</a></li>
+            <li><a href="about.html">ABOUT</a></li>
+            <li><a href="juice.html">JUICE</a></li>
+            <li><a href="location.html">LOCATION</a></li>
+            <li><a href="contact.html">CONTACT</a></li>
+          </ul>
+        </div>
+      </nav>
+
+      <div class="contact-wrap">
+        <div class="title">
+          <h3>Contact</h3>
+          <p>Fell free to tell us any questions</p>
+        </div>
+
+        <!--reference: https://www.sitepoint.com/basic-jquery-form-validation-tutorial/-->
+        <div class="container">
+          <form action="#" name="registration">
+        
+            <label for="firstname">First Name</label>
+            <input type="text" name="firstname" id="firstname" placeholder=""/>
+        
+            <label for="lastname">Last Name</label>
+            <input type="text" name="lastname" id="lastname" placeholder=""/>
+        
+            <label for="email">Email</label>
+            <input type="email" name="email" id="email" placeholder="example: john@doe.com"/>
+            <!--hide--><!--
+            <label for="password">Password</label>
+            <input type="password" name="password" id="password" placeholder="&#9679;&#9679;&#9679;&#9679;&#9679;"/>-->
+            <!--hide-->
+            <label for="message">Message</label>
+            <input type="text" name="message" id="message" placeholder=""/>
+            <button type="submit">Register</button>
+        
+          </form>
+        </div>
+      </div>
+
+      <footer>
+        <div class="footer-hero">We give our local communities an elevated daily dose of wellness 
+          by providing the most delicious, nutrient-dense products nature has to offer.</div>
+        <div class="footer-main">
+          <p><a href="contact.html">Contact</a></p>
+          <p><a href="termsofservice.html">Terms Of Service</a></p>
+          <p><a href="privacy.html">Privacy Notice</a></p>
+          <p><a href="faq.html"> FAQ</a></p>
+          <p><a href="about.html">About</a></p>
+          <p><a href="juice.html">Juices</a></p>
+        </div>
+        <div class="footer-bottom">Copyright © 2022 Blendr Juice Shop. | Website created By Joe Neve</div>
+      </footer>
+ 
+  </body>
+</html>

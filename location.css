@@ -1,0 +1,779 @@
+@font-face {
+    font-family: "coco-reg";
+    src: url("fonts/coco-gothic.regular.ttf");
+}
+
+@font-face {
+    font-family: "monserrat-bold";
+    src: url("fonts/Montserrat/static/Montserrat-Bold.ttf");
+}
+
+@font-face {
+    font-family: "monserrat-light";
+    src: url("fonts/Montserrat/static/Montserrat-ExtraLight.ttf");
+}
+
+@font-face {
+    font-family: "monserrat-thin";
+    src: url("fonts/Montserrat/static/Montserrat-Thin.ttf");
+}
+
+* {
+    margin: 0px;
+}
+
+body {
+    box-sizing: border-box;
+}
+
+nav {
+    z-index: 2;
+    border-bottom: 1px solid black;
+    position: sticky;
+    background-color: white;
+    top: 0px;
+    display: flex;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.9);
+    backdrop-filter: saturate(180%) blur(20px);
+}
+
+.logo-wrap img {
+    width: 200px;
+    margin-left: 20px;
+    margin-right: 80px;
+}
+
+.main-nav-wrap {
+    display: flex;
+    justify-content: space-between;
+    margin-right: 60px;
+}
+
+.main-nav {
+    padding: 0px;
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.main-nav li a {
+    margin-left: 20px;
+    font-family: "coco-reg";
+    font-size: 20px;
+    letter-spacing: 3px;
+    color: black;
+    text-decoration: none;
+    padding: 10px;
+    transition: background-color 0.5s;
+    border-radius: 10px;
+}
+
+.main-nav li a:hover {
+    background-color: #fdffa0;
+}
+
+.mobile-nav-wrap {
+    display: none;
+}
+
+.mobile-nav {
+    display: none;
+}
+
+/*location*/
+
+.wrap {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.title-wrap {
+    font-family: monserrat-bold;
+    font-size: 30px;
+    margin: 30px 0px;
+}
+
+.info {
+    padding: 30px 0px;
+    display: flex;
+    justify-content: space-evenly;
+    background-color: #b8c9ee;
+    align-items: center;
+}
+
+.info div {
+    width: 50%;
+}
+
+.info img {
+    width: 100%;
+}
+
+.info p {
+    font-family: monserrat-light;
+    font-size: 20px;
+    margin: 0px 20px;
+}
+
+.image-wrap img {
+    margin: 30px;
+    width: 40%;
+}
+
+.image-wrap {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+/*footer*/
+
+footer {
+    padding-top: 30px;
+    background-color: #8a8a8a;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+}
+
+.footer-hero {
+    font-family: monserrat-light;
+    font-size: 20px;
+    width: 50%;
+    text-align: center;
+}
+
+.footer-main {
+    margin-top: 30px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.footer-main p {
+    margin: 25px;
+    font-family: coco-reg;
+    font-size: 20px;
+}
+
+.footer-main a {
+    letter-spacing: 3px;
+    color: white;
+    text-decoration: none;
+    font-weight: 300;
+}
+
+.footer-main a:hover {
+    color: white;
+    text-decoration: underline;
+}
+
+.footer-bottom {
+    width: 90%;
+    text-align: center;
+    margin-top: 20px;
+    font-family: sans-serif;
+    padding: 10px 0px;
+    border-top: 1px solid white;
+}
+
+@media (max-width: 1240px) {
+    
+    /*footer*/
+    
+    footer {
+        padding-top: 30px;
+        background-color: #8a8a8a;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        color: white;
+    }
+    
+    .footer-hero {
+        font-family: monserrat-light;
+        font-size: 20px;
+        width: 50%;
+        text-align: center;
+    }
+    
+    .footer-main {
+        margin-top: 30px;
+        display: flex;
+        flex-wrap: wrap;
+    }
+    
+    .footer-main p {
+        margin: 25px;
+        font-family: coco-reg;
+        font-size: 20px;
+    }
+    
+    .footer-main a {
+        letter-spacing: 3px;
+        color: white;
+        text-decoration: none;
+        font-weight: 300;
+    }
+    
+    .footer-main a:hover {
+        color: white;
+        text-decoration: underline;
+    }
+    
+    .footer-bottom {
+        width: 90%;
+        text-align: center;
+        margin-top: 20px;
+        font-family: sans-serif;
+        padding: 10px 0px;
+        border-top: 1px solid white;
+    }
+    
+}
+
+@media (max-width: 1023px) {
+    nav {
+        z-index: 2;
+        border-bottom: 1px solid black;
+        position: sticky;
+        background-color: white;
+        top: 0px;   
+        background-color: rgba(255, 255, 255, 0.9);
+        backdrop-filter: saturate(180%) blur(20px);
+    }
+    
+    .logo-wrap img {
+        width: 200px;
+        margin-left: 20px;
+        margin-right: 30px;
+    }
+
+    .mobile-nav-wrap {
+        display: block;
+        width: 100%;
+    }
+
+    .logo-wrap {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .main-nav-wrap {
+        display: none;
+    }
+
+    .x-icon img, .hamb-icon img {
+        width: 50px;
+    }
+
+    .x-icon {
+        display: none;
+    }
+
+    .mobile-nav {
+        display: none;
+        border-top: 1px solid black;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        padding: 0px;
+        list-style: none;
+        position: absolute;
+        background-color: rgba(255, 255, 255);
+        width: 100%;
+    }
+
+    .mobile-nav li {
+        margin: 20px 0px;
+    }
+
+    .mobile-nav li a {
+        text-decoration: none;
+        font-family: "coco-reg";
+        font-size: 20px;
+        letter-spacing: 3px;
+        color: black;
+    }
+
+ 
+    
+    /*footer*/
+    
+    footer {
+        padding-top: 30px;
+        background-color: #8a8a8a;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        color: white;
+    }
+    
+    .footer-hero {
+        font-family: monserrat-light;
+        font-size: 20px;
+        width: 50%;
+        text-align: center;
+    }
+    
+    .footer-main {
+        margin-top: 30px;
+        display: flex;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+    }
+    
+    .footer-main p {
+        margin: 25px;
+        font-family: coco-reg;
+        font-size: 20px;
+    }
+    
+    .footer-main a {
+        letter-spacing: 3px;
+        color: white;
+        text-decoration: none;
+        font-weight: 300;
+    }
+    
+    .footer-main a:hover {
+        color: white;
+        text-decoration: underline;
+    }
+    
+    .footer-bottom {
+        width: 90%;
+        text-align: center;
+        margin-top: 20px;
+        font-family: sans-serif;
+        padding: 10px 0px;
+        border-top: 1px solid white;
+    }
+    
+}
+
+@media (max-width: 930px) {
+
+    nav {
+        z-index: 2;
+        border-bottom: 1px solid black;
+        position: sticky;
+        background-color: white;
+        top: 0px;   
+        background-color: rgba(255, 255, 255, 0.9);
+        backdrop-filter: saturate(180%) blur(20px);
+    }
+    
+    .logo-wrap img {
+        width: 200px;
+        margin-left: 20px;
+        margin-right: 30px;
+    }
+
+    .mobile-nav-wrap {
+        display: block;
+        width: 100%;
+    }
+
+    .logo-wrap {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .main-nav-wrap {
+        display: none;
+    }
+
+    .x-icon img, .hamb-icon img {
+        width: 50px;
+    }
+
+    .x-icon {
+        display: none;
+    }
+
+    .mobile-nav {
+        display: none;
+        border-top: 1px solid black;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        padding: 0px;
+        list-style: none;
+        position: absolute;
+        background-color: rgba(255, 255, 255);
+        width: 100%;
+    }
+
+    .mobile-nav li {
+        margin: 20px 0px;
+    }
+
+    .mobile-nav li a {
+        text-decoration: none;
+        font-family: "coco-reg";
+        font-size: 20px;
+        letter-spacing: 3px;
+        color: black;
+    }
+
+    /*location*/
+
+    .wrap {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .title-wrap {
+        font-family: monserrat-bold;
+        font-size: 30px;
+        margin: 30px 0px;
+    }
+
+    .info {
+        padding: 30px 0px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        background-color: #b8c9ee;
+        align-items: center;
+    }
+
+    .info div {
+        width: 100%;
+    }
+
+    .info img {
+        margin-top: 20px;
+        width: 80%;
+    }
+
+    .image-info-wrap {
+        display: flex;
+        justify-content: center;
+    }
+
+    .info p {
+        font-family: monserrat-light;
+        font-size: 20px;
+        margin: 0px 20px;
+        text-align: center;
+    }
+
+    .image-wrap img {
+        margin: 30px;
+        width: 80%;
+    }
+
+    .image-wrap {
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+    }
+
+
+   
+    
+    
+    /*footer*/
+    
+    footer {
+        padding-top: 30px;
+        background-color: #8a8a8a;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        color: white;
+    }
+    
+    .footer-hero {
+        font-family: monserrat-light;
+        font-size: 20px;
+        width: 50%;
+        text-align: center;
+    }
+    
+    .footer-main {
+        margin-top: 30px;
+        display: flex;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+    }
+    
+    .footer-main p {
+        margin: 25px;
+        font-family: coco-reg;
+        font-size: 20px;
+    }
+    
+    .footer-main a {
+        letter-spacing: 3px;
+        color: white;
+        text-decoration: none;
+        font-weight: 300;
+    }
+    
+    .footer-main a:hover {
+        color: white;
+        text-decoration: underline;
+    }
+    
+    .footer-bottom {
+        width: 90%;
+        text-align: center;
+        margin-top: 20px;
+        font-family: sans-serif;
+        padding: 10px 0px;
+        border-top: 1px solid white;
+    }
+    
+}
+
+@media (max-width: 767px) {
+
+    nav {
+        z-index: 2;
+        border-bottom: 1px solid black;
+        position: sticky;
+        background-color: white;
+        top: 0px;   
+        background-color: rgba(255, 255, 255, 0.9);
+        backdrop-filter: saturate(180%) blur(20px);
+    }
+    
+    .logo-wrap img {
+        width: 200px;
+        margin-left: 20px;
+        margin-right: 30px;
+    }
+
+    .mobile-nav-wrap {
+        display: block;
+        width: 100%;
+    }
+
+    .logo-wrap {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .main-nav-wrap {
+        display: none;
+    }
+
+    .x-icon img, .hamb-icon img {
+        width: 50px;
+    }
+
+    .x-icon {
+        display: none;
+    }
+
+    .mobile-nav {
+        display: none;
+        border-top: 1px solid black;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        padding: 0px;
+        list-style: none;
+        position: absolute;
+        background-color: rgba(255, 255, 255);
+        width: 100%;
+    }
+
+    .mobile-nav li {
+        margin: 20px 0px;
+    }
+
+    .mobile-nav li a {
+        text-decoration: none;
+        font-family: "coco-reg";
+        font-size: 20px;
+        letter-spacing: 3px;
+        color: black;
+    }
+    
+  
+
+    /*footer*/
+    
+    footer {
+        padding-top: 30px;
+        background-color: #8a8a8a;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        color: white;
+    }
+    
+    .footer-hero {
+        font-family: monserrat-light;
+        font-size: 20px;
+        width: 50%;
+        text-align: center;
+    }
+    
+    .footer-main {
+        margin-top: 30px;
+        display: flex;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+    }
+    
+    .footer-main p {
+        margin: 25px;
+        font-family: coco-reg;
+        font-size: 20px;
+    }
+    
+    .footer-main a {
+        letter-spacing: 3px;
+        color: white;
+        text-decoration: none;
+        font-weight: 300;
+    }
+    
+    .footer-main a:hover {
+        color: white;
+        text-decoration: underline;
+    }
+    
+    .footer-bottom {
+        width: 90%;
+        text-align: center;
+        margin-top: 20px;
+        font-family: sans-serif;
+        padding: 10px 0px;
+        border-top: 1px solid white;
+    }
+    
+}
+
+@media (max-width: 616px) {
+    nav {
+        z-index: 2;
+        border-bottom: 1px solid black;
+        position: sticky;
+        background-color: white;
+        top: 0px;   
+        background-color: rgba(255, 255, 255, 0.9);
+        backdrop-filter: saturate(180%) blur(20px);
+    }
+    
+    .logo-wrap img {
+        width: 150px;
+        margin-left: 20px;
+        margin-right: 10px;
+    }
+
+    .mobile-nav-wrap {
+        display: block;
+        width: 100%;
+    }
+
+    .logo-wrap {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .main-nav-wrap {
+        display: none;
+    }
+
+    .x-icon img, .hamb-icon img {
+        width: 45px;
+    }
+
+    .x-icon {
+        display: none;
+    }
+
+    .mobile-nav {
+        display: none;
+        border-top: 1px solid black;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        padding: 0px;
+        list-style: none;
+        position: absolute;
+        background-color: rgba(255, 255, 255);
+        width: 100%;
+    }
+
+    .mobile-nav li {
+        margin: 20px 0px;
+    }
+
+    .mobile-nav li a {
+        text-decoration: none;
+        font-family: "coco-reg";
+        font-size: 20px;
+        letter-spacing: 3px;
+        color: black;
+    }
+    
+    /*footer*/
+    
+    footer {
+        padding-top: 30px;
+        background-color: #8a8a8a;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        color: white;
+    }
+    
+    .footer-hero {
+        font-family: monserrat-light;
+        font-size: 20px;
+        width: 70%;
+        text-align: center;
+    }
+    
+    .footer-main {
+        margin-top: 30px;
+        display: flex;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+    }
+    
+    .footer-main p {
+        margin: 25px;
+        font-family: coco-reg;
+        font-size: 20px;
+    }
+    
+    .footer-main a {
+        letter-spacing: 3px;
+        color: white;
+        text-decoration: none;
+        font-weight: 300;
+    }
+    
+    .footer-main a:hover {
+        color: white;
+        text-decoration: underline;
+    }
+    
+    .footer-bottom {
+        width: 90%;
+        text-align: center;
+        margin-top: 20px;
+        font-family: sans-serif;
+        padding: 10px 0px;
+        border-top: 1px solid white;
+    }
+    
+}
