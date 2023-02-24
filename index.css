@@ -1,0 +1,2815 @@
+@font-face {
+    font-family: "coco-reg";
+    src: url("fonts/coco-gothic.regular.ttf");
+}
+
+@font-face {
+    font-family: "monserrat-bold";
+    src: url("fonts/Montserrat/static/Montserrat-Bold.ttf");
+}
+
+@font-face {
+    font-family: "monserrat-light";
+    src: url("fonts/Montserrat/static/Montserrat-ExtraLight.ttf");
+}
+
+@font-face {
+    font-family: "monserrat-thin";
+    src: url("fonts/Montserrat/static/Montserrat-Thin.ttf");
+}
+
+* {
+    margin: 0px;
+}
+
+body {
+    box-sizing: border-box;
+}
+
+nav {
+    z-index: 2;
+    border-bottom: 1px solid black;
+    position: sticky;
+    background-color: white;
+    top: 0px;
+    display: flex;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.9);
+    backdrop-filter: saturate(180%) blur(20px);
+}
+
+.logo-wrap img {
+    width: 200px;
+    margin-left: 20px;
+    margin-right: 80px;
+}
+
+.main-nav-wrap {
+    display: flex;
+    justify-content: space-between;
+    margin-right: 60px;
+}
+
+.main-nav {
+    padding: 0px;
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.main-nav li a {
+    margin-left: 20px;
+    font-family: "coco-reg";
+    font-size: 20px;
+    letter-spacing: 3px;
+    color: black;
+    text-decoration: none;
+    padding: 10px;
+    transition: background-color 0.5s;
+    border-radius: 10px;
+}
+
+.main-nav li a:hover {
+    background-color: #fdffa0;
+}
+
+.mobile-nav-wrap {
+    display: none;
+}
+
+.mobile-nav {
+    display: none;
+}
+
+
+
+
+
+.hero-wrap {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero-wrap img {
+    width: 100%;
+}
+
+.hero-text {
+    border-radius: 10px;
+    width: 50%;
+    padding: 10px;
+    background-color: rgba(255, 255, 255, 0.5);
+    backdrop-filter: saturate(180%) blur(20px);
+    position: absolute;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.hero-text h3 {
+    text-align: center;
+    font-family: monserrat-bold;
+    font-size: 50px;
+    margin: 20px 0px;
+}
+
+.hero-text p {
+    text-align: center;
+    width: 80%;
+    font-family: monserrat-light;
+    font-size: 36px;
+    line-height: 33px;
+    margin-bottom: 20px;
+}
+
+.hero-text a {
+    font-family: monserrat-thin;
+    padding: 15px;
+    margin-bottom: 20px;
+    border: 1px solid black;
+    text-decoration: none;
+    border-radius: 10px;
+    font-size: 20px;
+    transition: background-color 0.7s, color 0.7s;
+    color: black;
+}
+
+.hero-text a:hover {
+    background-color: black;
+    color: white;
+}
+
+/*benefits*/
+.benefits-wrap {
+    background-color: #ececec;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.benefits-block {
+    margin-top: 100px;
+    margin-bottom: 100px;
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.benefits-block img {
+    width: 100px;
+}
+
+.benefits-block h3 {
+    font-family: monserrat-bold;
+    font-size: 40px;
+    margin: 20px 0px;
+    text-align: center;
+}
+
+.benefits-block p {
+    font-family: monserrat-light;
+    font-size: 18px;
+    margin: 10px 0px;
+    text-align: center;
+}
+
+
+/*most popular juice blends*/
+
+.popular-wrap {
+    margin-top: 80px;
+}
+
+.popular-hero {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 80px;
+}
+
+.popular-hero h3 {
+    font-family: monserrat-bold;
+    font-size: 45px;
+}
+
+.popular-hero p {
+    font-family: monserrat-light;
+    font-size: 30px;
+    width: 60%;
+    text-align: center;
+}
+
+
+.circles {
+    height: 0px;
+}
+
+.pomelo-1, .pomelo-2, .pomelo-3, .banana-1, .banana-2, .banana-3, .matcha-1, .matcha-2, .matcha-3 {
+    position: relative;
+    z-index: -1;
+}
+
+.pomelo-1 {
+    width: 250px;
+    left: 100px;
+    top: 20px;
+}
+
+.pomelo-2 {
+    width: 300px;
+    left: 120px;
+    top: 400px;
+}
+
+.pomelo-3 {
+    width: 300px;
+    right: 100px;
+    top: 200px;
+}
+
+.juice-wrap {
+    display: flex;
+    justify-content: space-evenly;
+    background-color: rgba(255, 255, 255, 0.5);
+    backdrop-filter: saturate(180%) blur(20px);
+}
+
+.juice-info  {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 40%;
+    margin: 80px 0px;
+}
+
+.juice-name {
+    display: flex;
+    justify-content: center;
+    font-family: monserrat-bold;
+    font-size: 40px;
+    text-align: center;
+    margin-bottom: 30px;
+    border-bottom: 3px solid #fdd245;
+    width: fit-content;
+}
+
+.matcha {
+    border-bottom: 3px solid #9accab;
+}
+
+.banana {
+    border-bottom: 3px solid #bbb9a5;
+}
+
+.juice-price {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 30px;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.juice-ingredients {
+    font-family: monserrat-thin;
+    font-size: 30px;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.juice-description {
+    font-family: monserrat-light;
+    font-size: 18px;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.juice-info a {
+    font-family: monserrat-thin;
+    padding: 14px;
+    font-size: 18px;
+    color: black;
+    text-decoration: none;
+    border: 1px solid black;
+    border-radius: 10px;
+    transition: background-color 1s, color 1s;
+}
+
+.juice-info a:hover {
+    background-color: black;
+    color: white;
+}
+
+
+.banana-1 {
+    width: 250px;
+    left: 100px;
+    top: 20px;
+}
+
+.banana-2 {
+    width: 300px;
+    left: 80px;
+    top: 300px;
+}
+
+.banana-3 {
+    width: 300px;
+    right: 480px;
+    top: 370px;
+}
+
+.matcha-1 {
+    width: 250px;
+    left: 400px;
+    top: 60px;
+}
+
+.matcha-2 {
+    width: 300px;
+    left: 80px;
+    top: 400px;
+}
+
+.matcha-3 {
+    width: 300px;
+    right: 700px;
+    top: 300px;
+}
+
+
+/*map*/
+
+.location-wrap {
+    background-color: #ececec;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 100px 0px;
+}
+
+.map iframe {
+    border: 1px solid black;
+    width: 500px;
+    height: 500px;
+}
+
+.location-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.location-text h3 {
+    font-family: monserrat-bold;
+    font-size: 40px;
+    margin-bottom: 30px;
+    border-bottom: 2px solid black;
+    width: fit-content;
+    text-align: center;
+}
+
+.location-text p {
+    font-family: monserrat-thin;
+    font-size: 27px;
+}
+
+.location-text a {
+    color: black;
+    text-decoration: none;
+}
+
+.location-text a:hover {
+    color: black;
+    text-decoration: underline;
+}
+
+
+
+/*footer*/
+
+footer {
+    padding-top: 30px;
+    background-color: #343434;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+}
+
+.footer-hero {
+    font-family: monserrat-light;
+    font-size: 20px;
+    width: 50%;
+    text-align: center;
+}
+
+.footer-main {
+    margin-top: 30px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.footer-main p {
+    margin: 25px;
+    font-family: coco-reg;
+    font-size: 20px;
+}
+
+.footer-main a {
+    letter-spacing: 3px;
+    color: white;
+    text-decoration: none;
+    font-weight: 300;
+}
+
+.footer-main a:hover {
+    color: white;
+    text-decoration: underline;
+}
+
+.footer-bottom {
+    width: 90%;
+    text-align: center;
+    margin-top: 20px;
+    font-family: sans-serif;
+    padding: 10px 0px;
+    border-top: 1px solid white;
+}
+
+
+/*responsive*/
+
+@media (max-width: 1240px) {
+    
+    
+    .hero-wrap {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .hero-wrap img {
+        width: 100%;
+    }
+    
+    .hero-text {
+        border-radius: 10px;
+        width: 50%;
+        padding: 10px;
+        background-color: rgba(255, 255, 255, 0.5);
+        backdrop-filter: saturate(180%) blur(20px);
+        position: absolute;
+        z-index: 1;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .hero-text h3 {
+        text-align: center;
+        font-family: monserrat-bold;
+        font-size: 45px;
+        margin: 20px 0px;
+    }
+    
+    .hero-text p {
+        text-align: center;
+        width: 80%;
+        font-family: monserrat-light;
+        font-size: 28px;
+        line-height: 33px;
+        margin-bottom: 20px;
+    }
+    
+    .hero-text a {
+        font-family: monserrat-thin;
+        padding: 15px;
+        margin-bottom: 20px;
+        border: 1px solid black;
+        border-radius: 10px;
+        font-size: 20px;
+        transition: background-color 0.7s, color 0.7s;
+    }
+    
+    .hero-text a:hover {
+        background-color: black;
+        color: white;
+    }
+    
+    /*benefits*/
+    .benefits-wrap {
+        background-color: #ececec;
+        display: flex;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+    }
+    
+    .benefits-block {
+        margin-top: 100px;
+        margin-bottom: 100px;
+        width: 20%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .benefits-block img {
+        width: 100px;
+    }
+    
+    .benefits-block h3 {
+        font-family: monserrat-bold;
+        font-size: 40px;
+        margin: 20px 0px;
+        text-align: center;
+    }
+    
+    .benefits-block p {
+        font-family: monserrat-light;
+        font-size: 18px;
+        margin: 10px 0px;
+        text-align: center;
+    }
+    
+    
+    /*most popular juice blends*/
+    
+    .popular-wrap {
+        margin-top: 80px;
+    }
+    
+    .popular-hero {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 80px;
+    }
+    
+    .popular-hero h3 {
+        font-family: monserrat-bold;
+        font-size: 45px;
+    }
+    
+    .popular-hero p {
+        font-family: monserrat-light;
+        font-size: 30px;
+        width: 60%;
+        text-align: center;
+    }
+    
+    
+    .circles {
+        height: 0px;
+    }
+    
+    .pomelo-1, .pomelo-2, .pomelo-3, .banana-1, .banana-2, .banana-3, .matcha-1, .matcha-2, .matcha-3 {
+        position: relative;
+        z-index: -1;
+    }
+    
+    .pomelo-1 {
+        width: 250px;
+        left: 100px;
+        top: 20px;
+    }
+    
+    .pomelo-2 {
+        width: 300px;
+        left: 120px;
+        top: 400px;
+    }
+    
+    .pomelo-3 {
+        width: 300px;
+        right: 100px;
+        top: 200px;
+    }
+    
+    .juice-wrap {
+        display: flex;
+        justify-content: space-evenly;
+        background-color: rgba(255, 255, 255, 0.5);
+        backdrop-filter: saturate(180%) blur(20px);
+    }
+    
+    .juice-info  {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 40%;
+        margin: 80px 0px;
+    }
+    
+    .juice-name {
+        display: flex;
+        justify-content: center;
+        font-family: monserrat-bold;
+        font-size: 40px;
+        text-align: center;
+        margin-bottom: 30px;
+        border-bottom: 3px solid #fdd245;
+        width: fit-content;
+    }
+    
+    .matcha {
+        border-bottom: 3px solid #9accab;
+    }
+    
+    .banana {
+        border-bottom: 3px solid #bbb9a5;
+    }
+    
+    .juice-price {
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        font-size: 30px;
+        text-align: center;
+        margin-bottom: 30px;
+    }
+    
+    .juice-ingredients {
+        font-family: monserrat-thin;
+        font-size: 30px;
+        text-align: center;
+        margin-bottom: 30px;
+    }
+    
+    .juice-description {
+        font-family: monserrat-light;
+        font-size: 18px;
+        text-align: center;
+        margin-bottom: 30px;
+    }
+    
+    .juice-info a {
+        font-family: monserrat-thin;
+        padding: 14px;
+        font-size: 18px;
+        color: black;
+        border: 1px solid black;
+        border-radius: 10px;
+        transition: background-color 1s, color 1s;
+    }
+    
+    .juice-info a:hover {
+        background-color: black;
+        color: white;
+    }
+    
+    
+    .banana-1 {
+        width: 250px;
+        left: 100px;
+        top: 20px;
+    }
+    
+    .banana-2 {
+        width: 300px;
+        left: 80px;
+        top: 300px;
+    }
+    
+    .banana-3 {
+        width: 300px;
+        right: 480px;
+        top: 370px;
+    }
+    
+    .matcha-1 {
+        width: 250px;
+        left: 400px;
+        top: 60px;
+    }
+    
+    .matcha-2 {
+        width: 300px;
+        left: 80px;
+        top: 400px;
+    }
+    
+    .matcha-3 {
+        width: 300px;
+        right: 700px;
+        top: 300px;
+    }
+    
+    
+    /*map*/
+    
+    .location-wrap {
+        background-color: #ececec;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        padding: 100px 0px;
+    }
+    
+    .map iframe {
+        border: 1px solid black;
+        width: 500px;
+        height: 500px;
+    }
+    
+    .location-text {
+        text-align: center;
+    }
+    
+    .location-text h3 {
+        font-family: monserrat-bold;
+        font-size: 40px;
+        margin-bottom: 30px;
+    }
+    
+    .location-text p {
+        font-family: monserrat-thin;
+        font-size: 27px;
+    }
+    
+    
+    
+    /*footer*/
+    
+    footer {
+        padding-top: 30px;
+        background-color: #343434;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        color: white;
+    }
+    
+    .footer-hero {
+        font-family: monserrat-light;
+        font-size: 20px;
+        width: 50%;
+        text-align: center;
+    }
+    
+    .footer-main {
+        margin-top: 30px;
+        display: flex;
+        flex-wrap: wrap;
+    }
+    
+    .footer-main p {
+        margin: 25px;
+        font-family: coco-reg;
+        font-size: 20px;
+    }
+    
+    .footer-main a {
+        letter-spacing: 3px;
+        color: white;
+        text-decoration: none;
+        font-weight: 300;
+    }
+    
+    .footer-main a:hover {
+        color: white;
+        text-decoration: underline;
+    }
+    
+    .footer-bottom {
+        width: 90%;
+        text-align: center;
+        margin-top: 20px;
+        font-family: sans-serif;
+        padding: 10px 0px;
+        border-top: 1px solid white;
+    }
+    
+}
+
+@media (max-width: 1023px) {
+    nav {
+        z-index: 2;
+        border-bottom: 1px solid black;
+        position: sticky;
+        background-color: white;
+        top: 0px;   
+        background-color: rgba(255, 255, 255, 0.9);
+        backdrop-filter: saturate(180%) blur(20px);
+    }
+    
+    .logo-wrap img {
+        width: 200px;
+        margin-left: 20px;
+        margin-right: 30px;
+    }
+
+    .mobile-nav-wrap {
+        display: block;
+        width: 100%;
+    }
+
+    .logo-wrap {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .main-nav-wrap {
+        display: none;
+    }
+
+    .x-icon img, .hamb-icon img {
+        width: 50px;
+    }
+
+    .x-icon {
+        display: none;
+    }
+
+    .mobile-nav {
+        display: none;
+        border-top: 1px solid black;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        padding: 0px;
+        list-style: none;
+        position: absolute;
+        background-color: rgba(255, 255, 255);
+        width: 100%;
+    }
+
+    .mobile-nav li {
+        margin: 20px 0px;
+    }
+
+    .mobile-nav li a {
+        text-decoration: none;
+        font-family: "coco-reg";
+        font-size: 20px;
+        letter-spacing: 3px;
+        color: black;
+    }
+    
+    
+    .hero-wrap {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .hero-wrap img {
+        width: 100%;
+    }
+    
+    .hero-text {
+        border-radius: 10px;
+        width: 50%;
+        padding: 10px;
+        background-color: rgba(255, 255, 255, 0.5);
+        backdrop-filter: saturate(180%) blur(20px);
+        position: absolute;
+        z-index: 1;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .hero-text h3 {
+        text-align: center;
+        font-family: monserrat-bold;
+        font-size: 40px;
+        margin: 20px 0px;
+    }
+    
+    .hero-text p {
+        text-align: center;
+        width: 80%;
+        font-family: monserrat-light;
+        font-size: 24px;
+        line-height: 33px;
+        margin-bottom: 20px;
+    }
+    
+    .hero-text a {
+        font-family: monserrat-thin;
+        padding: 15px;
+        margin-bottom: 20px;
+        border: 1px solid black;
+        border-radius: 10px;
+        font-size: 20px;
+        transition: background-color 0.7s, color 0.7s;
+    }
+    
+    .hero-text a:hover {
+        background-color: black;
+        color: white;
+    }
+    
+    /*benefits*/
+    .benefits-wrap {
+        background-color: #ececec;
+        display: flex;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+    }
+    
+    .benefits-block {
+        margin-top: 100px;
+        margin-bottom: 100px;
+        width: 20%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .benefits-block img {
+        width: 100px;
+    }
+    
+    .benefits-block h3 {
+        font-family: monserrat-bold;
+        font-size: 30px;
+        margin: 20px 0px;
+        text-align: center;
+    }
+    
+    .benefits-block p {
+        font-family: monserrat-light;
+        font-size: 18px;
+        margin: 10px 0px;
+        text-align: center;
+    }
+    
+    
+    /*most popular juice blends*/
+    
+    .popular-wrap {
+        margin-top: 80px;
+    }
+    
+    .popular-hero {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 80px;
+    }
+    
+    .popular-hero h3 {
+        font-family: monserrat-bold;
+        font-size: 38px;
+    }
+    
+    .popular-hero p {
+        font-family: monserrat-light;
+        font-size: 24px;
+        width: 60%;
+        text-align: center;
+    }
+    
+    
+    .circles {
+        height: 0px;
+    }
+    
+    .pomelo-1, .pomelo-2, .pomelo-3, .banana-1, .banana-2, .banana-3, .matcha-1, .matcha-2, .matcha-3 {
+        position: relative;
+        z-index: -1;
+    }
+    
+    .pomelo-1 {
+        width: 250px;
+        left: 60px;
+        top: 20px;
+    }
+    
+    .pomelo-2 {
+        width: 300px;
+        left: 20px;
+        top: 400px;
+    }
+    
+    .pomelo-3 {
+        width: 300px;
+        right: 250px;
+        top: 200px;
+    }
+    
+    .juice-wrap {
+        display: flex;
+        justify-content: space-evenly;
+        background-color: rgba(255, 255, 255, 0.5);
+        backdrop-filter: saturate(180%) blur(20px);
+    }
+    
+    .juice-info  {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 40%;
+        margin: 80px 0px;
+    }
+    
+    .juice-name {
+        display: flex;
+        justify-content: center;
+        font-family: monserrat-bold;
+        font-size: 40px;
+        text-align: center;
+        margin-bottom: 30px;
+        border-bottom: 3px solid #fdd245;
+        width: fit-content;
+    }
+    
+    .matcha {
+        border-bottom: 3px solid #9accab;
+    }
+    
+    .banana {
+        border-bottom: 3px solid #bbb9a5;
+    }
+    
+    .juice-price {
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        font-size: 30px;
+        text-align: center;
+        margin-bottom: 30px;
+    }
+    
+    .juice-ingredients {
+        font-family: monserrat-thin;
+        font-size: 30px;
+        text-align: center;
+        margin-bottom: 30px;
+    }
+    
+    .juice-description {
+        font-family: monserrat-light;
+        font-size: 18px;
+        text-align: center;
+        margin-bottom: 30px;
+    }
+    
+    .juice-info a {
+        font-family: monserrat-thin;
+        padding: 14px;
+        font-size: 18px;
+        color: black;
+        border: 1px solid black;
+        border-radius: 10px;
+        transition: background-color 1s, color 1s;
+    }
+    
+    .juice-info a:hover {
+        background-color: black;
+        color: white;
+    }
+    
+    
+    .banana-1 {
+        width: 250px;
+        left: 50px;
+        top: 20px;
+    }
+    
+    .banana-2 {
+        width: 300px;
+        left: 20px;
+        top: 300px;
+    }
+    
+    .banana-3 {
+        width: 300px;
+        right: 480px;
+        top: 370px;
+    }
+    
+    .matcha-1 {
+        width: 250px;
+        left: 300px;
+        top: 60px;
+    }
+    
+    .matcha-2 {
+        width: 300px;
+        left: 20px;
+        top: 400px;
+    }
+    
+    .matcha-3 {
+        width: 300px;
+        right: 700px;
+        top: 300px;
+    }
+    
+    
+    /*map*/
+    
+    .location-wrap {
+        background-color: #ececec;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        padding: 100px 0px;
+    }
+    
+    .map iframe {
+        border: 1px solid black;
+        width: 300px;
+        height: 300px;
+    }
+    
+    .location-text {
+        text-align: center;
+    }
+    
+    .location-text h3 {
+        font-family: monserrat-bold;
+        font-size: 40px;
+        margin-bottom: 30px;
+    }
+    
+    .location-text p {
+        font-family: monserrat-thin;
+        font-size: 27px;
+    }
+    
+    
+    
+    /*footer*/
+    
+    footer {
+        padding-top: 30px;
+        background-color: #343434;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        color: white;
+    }
+    
+    .footer-hero {
+        font-family: monserrat-light;
+        font-size: 20px;
+        width: 50%;
+        text-align: center;
+    }
+    
+    .footer-main {
+        margin-top: 30px;
+        display: flex;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+    }
+    
+    .footer-main p {
+        margin: 25px;
+        font-family: coco-reg;
+        font-size: 20px;
+    }
+    
+    .footer-main a {
+        letter-spacing: 3px;
+        color: white;
+        text-decoration: none;
+        font-weight: 300;
+    }
+    
+    .footer-main a:hover {
+        color: white;
+        text-decoration: underline;
+    }
+    
+    .footer-bottom {
+        width: 90%;
+        text-align: center;
+        margin-top: 20px;
+        font-family: sans-serif;
+        padding: 10px 0px;
+        border-top: 1px solid white;
+    }
+    
+}
+
+
+
+@media (max-width: 930px) {
+
+    nav {
+        z-index: 2;
+        border-bottom: 1px solid black;
+        position: sticky;
+        background-color: white;
+        top: 0px;   
+        background-color: rgba(255, 255, 255, 0.9);
+        backdrop-filter: saturate(180%) blur(20px);
+    }
+    
+    .logo-wrap img {
+        width: 200px;
+        margin-left: 20px;
+        margin-right: 30px;
+    }
+
+    .mobile-nav-wrap {
+        display: block;
+        width: 100%;
+    }
+
+    .logo-wrap {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .main-nav-wrap {
+        display: none;
+    }
+
+    .x-icon img, .hamb-icon img {
+        width: 50px;
+    }
+
+    .x-icon {
+        display: none;
+    }
+
+    .mobile-nav {
+        display: none;
+        border-top: 1px solid black;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        padding: 0px;
+        list-style: none;
+        position: absolute;
+        background-color: rgba(255, 255, 255);
+        width: 100%;
+    }
+
+    .mobile-nav li {
+        margin: 20px 0px;
+    }
+
+    .mobile-nav li a {
+        text-decoration: none;
+        font-family: "coco-reg";
+        font-size: 20px;
+        letter-spacing: 3px;
+        color: black;
+    }
+    
+    
+    .hero-wrap {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        overflow: hidden;
+    }
+    
+    .hero-wrap img {
+        width: 120%;
+    
+    }
+    
+    .hero-text {
+        border-radius: 10px;
+        width: 60%;
+        padding: 10px;
+        background-color: rgba(255, 255, 255, 0.5);
+        backdrop-filter: saturate(180%) blur(20px);
+        position: absolute;
+        z-index: 1;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .hero-text h3 {
+        text-align: center;
+        font-family: monserrat-bold;
+        font-size: 30px;
+        margin: 20px 0px;
+    }
+    
+    .hero-text p {
+        text-align: center;
+        width: 80%;
+        font-family: monserrat-light;
+        font-size: 24px;
+        line-height: 33px;
+        margin-bottom: 20px;
+    }
+    
+    .hero-text a {
+        font-family: monserrat-thin;
+        padding: 15px;
+        margin-bottom: 20px;
+        border: 1px solid black;
+        border-radius: 10px;
+        font-size: 20px;
+        transition: background-color 0.7s, color 0.7s;
+    }
+    
+    .hero-text a:hover {
+        background-color: black;
+        color: white;
+    }
+    
+    /*benefits*/
+    .benefits-wrap {
+        background-color: #ececec;
+        display: flex;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+    }
+    
+    .benefits-block {
+        margin-top: 100px;
+        margin-bottom: 100px;
+        width: 230px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .benefits-block img {
+        width: 100px;
+    }
+    
+    .benefits-block h3 {
+        font-family: monserrat-bold;
+        font-size: 30px;
+        margin: 20px 0px;
+        text-align: center;
+    }
+    
+    .benefits-block p {
+        font-family: monserrat-light;
+        font-size: 18px;
+        margin: 10px 0px;
+        text-align: center;
+    }
+    
+    
+    /*most popular juice blends*/
+    
+    .popular-wrap {
+        margin-top: 80px;
+    }
+    
+    .popular-hero {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 80px;
+    }
+    
+    .popular-hero h3 {
+        font-family: monserrat-bold;
+        font-size: 38px;
+    }
+    
+    .popular-hero p {
+        font-family: monserrat-light;
+        font-size: 24px;
+        width: 60%;
+        text-align: center;
+    }
+    
+    
+    .circles {
+        height: 0px;
+    }
+    
+    .pomelo-1, .pomelo-2, .pomelo-3, .banana-1, .banana-2, .banana-3, .matcha-1, .matcha-2, .matcha-3 {
+        position: relative;
+        z-index: -1;
+    }
+    
+    .pomelo-1 {
+        width: 150px;
+        left: 60px;
+        top: 20px;
+    }
+    
+    .pomelo-2 {
+        width: 200px;
+        left: 20px;
+        top: 300px;
+    }
+    
+    .pomelo-3 {
+        width: 200px;
+        right: 200px;
+        top: 200px;
+    }
+
+    .product-block {
+        width: 50%;
+    }
+    .product-block img {
+        width: 100%;
+    }
+    
+    .juice-wrap {
+        display: flex;
+        justify-content: space-evenly;
+        background-color: rgba(255, 255, 255, 0.5);
+        backdrop-filter: saturate(180%) blur(20px);
+    }
+    
+    .juice-info  {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 50%;
+        margin: 40px 20px;
+    }
+    
+    .juice-name {
+        display: flex;
+        justify-content: center;
+        font-family: monserrat-bold;
+        font-size: 40px;
+        text-align: center;
+        margin-bottom: 30px;
+        border-bottom: 3px solid #fdd245;
+        width: fit-content;
+    }
+    
+    .matcha {
+        border-bottom: 3px solid #9accab;
+    }
+    
+    .banana {
+        border-bottom: 3px solid #bbb9a5;
+    }
+    
+    .juice-price {
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        font-size: 30px;
+        text-align: center;
+        margin-bottom: 30px;
+    }
+    
+    .juice-ingredients {
+        font-family: monserrat-thin;
+        font-size: 27px;
+        text-align: center;
+        margin-bottom: 30px;
+    }
+    
+    .juice-description {
+        font-family: monserrat-light;
+        font-size: 18px;
+        text-align: center;
+        margin-bottom: 30px;
+    }
+    
+    .juice-info a {
+        font-family: monserrat-thin;
+        padding: 14px;
+        font-size: 18px;
+        color: black;
+        border: 1px solid black;
+        border-radius: 10px;
+        transition: background-color 1s, color 1s;
+    }
+    
+    .juice-info a:hover {
+        background-color: black;
+        color: white;
+    }
+    
+    
+    .banana-1 {
+        width: 150px;
+        left: 50px;
+        top: 20px;
+    }
+    
+    .banana-2 {
+        width: 200px;
+        left: 20px;
+        top: 300px;
+    }
+    
+    .banana-3 {
+        width: 200px;
+        right: 480px;
+        top: 370px;
+    }
+    
+    .matcha-1 {
+        width: 150px;
+        left: 300px;
+        top: 60px;
+    }
+    
+    .matcha-2 {
+        width: 200px;
+        left: 30px;
+        top: 300px;
+    }
+    
+    .matcha-3 {
+        width: 200px;
+        right: 500px;
+        top: 300px;
+    }
+    
+    
+    /*map*/
+    
+    .location-wrap {
+        background-color: #ececec;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        padding: 100px 0px;
+    }
+    
+    .map iframe {
+        border: 1px solid black;
+        width: 300px;
+        height: 300px;
+        margin: 10px;
+    }
+    
+    .location-text {
+        text-align: center;
+    }
+    
+    .location-text h3 {
+        font-family: monserrat-bold;
+        font-size: 40px;
+        margin-bottom: 30px;
+    }
+    
+    .location-text p {
+        font-family: monserrat-thin;
+        font-size: 27px;
+    }
+    
+    
+    
+    /*footer*/
+    
+    footer {
+        padding-top: 30px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        color: white;
+    }
+    
+    .footer-hero {
+        font-family: monserrat-light;
+        font-size: 20px;
+        width: 50%;
+        text-align: center;
+    }
+    
+    .footer-main {
+        margin-top: 30px;
+        display: flex;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+    }
+    
+    .footer-main p {
+        margin: 25px;
+        font-family: coco-reg;
+        font-size: 20px;
+    }
+    
+    .footer-main a {
+        letter-spacing: 3px;
+        color: white;
+        text-decoration: none;
+        font-weight: 300;
+    }
+    
+    .footer-main a:hover {
+        color: white;
+        text-decoration: underline;
+    }
+    
+    .footer-bottom {
+        width: 90%;
+        text-align: center;
+        margin-top: 20px;
+        font-family: sans-serif;
+        padding: 10px 0px;
+        border-top: 1px solid white;
+    }
+    
+}
+
+
+@media (max-width: 767px) {
+
+    nav {
+        z-index: 2;
+        border-bottom: 1px solid black;
+        position: sticky;
+        background-color: white;
+        top: 0px;   
+        background-color: rgba(255, 255, 255, 0.9);
+        backdrop-filter: saturate(180%) blur(20px);
+    }
+    
+    .logo-wrap img {
+        width: 200px;
+        margin-left: 20px;
+        margin-right: 30px;
+    }
+
+    .mobile-nav-wrap {
+        display: block;
+        width: 100%;
+    }
+
+    .logo-wrap {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .main-nav-wrap {
+        display: none;
+    }
+
+    .x-icon img, .hamb-icon img {
+        width: 50px;
+    }
+
+    .x-icon {
+        display: none;
+    }
+
+    .mobile-nav {
+        display: none;
+        border-top: 1px solid black;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        padding: 0px;
+        list-style: none;
+        position: absolute;
+        background-color: rgba(255, 255, 255);
+        width: 100%;
+    }
+
+    .mobile-nav li {
+        margin: 20px 0px;
+    }
+
+    .mobile-nav li a {
+        text-decoration: none;
+        font-family: "coco-reg";
+        font-size: 20px;
+        letter-spacing: 3px;
+        color: black;
+    }
+    
+    
+    .hero-wrap {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        overflow: hidden;
+    }
+    
+    .hero-wrap img {
+        width: 150%;
+    
+    }
+    
+    .hero-text {
+        border-radius: 10px;
+        width: 60%;
+        padding: 10px;
+        background-color: rgba(255, 255, 255, 0.5);
+        backdrop-filter: saturate(180%) blur(20px);
+        position: absolute;
+        z-index: 1;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .hero-text h3 {
+        text-align: center;
+        font-family: monserrat-bold;
+        font-size: 30px;
+        margin: 20px 0px;
+    }
+    
+    .hero-text p {
+        text-align: center;
+        width: 90%;
+        font-family: monserrat-light;
+        font-size: 24px;
+        line-height: 33px;
+        margin-bottom: 20px;
+    }
+    
+    .hero-text a {
+        font-family: monserrat-thin;
+        padding: 15px;
+        margin-bottom: 20px;
+        border: 1px solid black;
+        border-radius: 10px;
+        font-size: 20px;
+        transition: background-color 0.7s, color 0.7s;
+    }
+    
+    .hero-text a:hover {
+        background-color: black;
+        color: white;
+    }
+    
+    /*benefits*/
+    .benefits-wrap {
+        background-color: #ececec;
+        display: flex;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+        padding: 100px 0px;
+    }
+    
+    .benefits-block {
+        margin-top: 20px;
+        margin-bottom: 20px;
+        width: 230px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .benefits-block img {
+        width: 100px;
+    }
+    
+    .benefits-block h3 {
+        font-family: monserrat-bold;
+        font-size: 30px;
+        margin: 10px 0px;
+        text-align: center;
+    }
+    
+    .benefits-block p {
+        font-family: monserrat-light;
+        font-size: 18px;
+        margin: 4px 0px;
+        text-align: center;
+    }
+    
+    
+    /*most popular juice blends*/
+    
+    .popular-wrap {
+        margin-top: 80px;
+    }
+    
+    .popular-hero {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 80px;
+    }
+    
+    .popular-hero h3 {
+        font-family: monserrat-bold;
+        font-size: 30px;
+    }
+    
+    .popular-hero p {
+        font-family: monserrat-light;
+        font-size: 20px;
+        width: 60%;
+        text-align: center;
+    }
+    
+    
+    .circles {
+        height: 0px;
+    }
+    
+    .pomelo-1, .pomelo-2, .pomelo-3, .banana-1, .banana-2, .banana-3, .matcha-1, .matcha-2, .matcha-3 {
+        position: relative;
+        z-index: -1;
+    }
+    
+    .pomelo-1 {
+        width: 150px;
+        left: 60px;
+        top: 20px;
+    }
+    
+    .pomelo-2 {
+        width: 200px;
+        left: 20px;
+        top: 300px;
+    }
+    
+    .pomelo-3 {
+        width: 200px;
+        right: 200px;
+        top: 200px;
+    }
+
+    .product-block {
+        width: 50%;
+    }
+    .product-block img {
+        width: 100%;
+    }
+    
+    .juice-wrap {
+        display: flex;
+        justify-content: space-evenly;
+        background-color: rgba(255, 255, 255, 0.5);
+        backdrop-filter: saturate(180%) blur(20px);
+    }
+    
+    .juice-info  {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 50%;
+        margin: 40px 20px;
+    }
+    
+    .juice-name {
+        display: flex;
+        justify-content: center;
+        font-family: monserrat-bold;
+        font-size: 40px;
+        text-align: center;
+        margin-bottom: 30px;
+        border-bottom: 3px solid #fdd245;
+        width: fit-content;
+    }
+    
+    .matcha {
+        border-bottom: 3px solid #9accab;
+    }
+    
+    .banana {
+        border-bottom: 3px solid #bbb9a5;
+    }
+    
+    .juice-price {
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        font-size: 30px;
+        text-align: center;
+        margin-bottom: 30px;
+    }
+    
+    .juice-ingredients {
+        font-family: monserrat-thin;
+        font-size: 27px;
+        text-align: center;
+        margin-bottom: 30px;
+    }
+    
+    .juice-description {
+        font-family: monserrat-light;
+        font-size: 16px;
+        text-align: center;
+        margin-bottom: 30px;
+    }
+    
+    .juice-info a {
+        font-family: monserrat-thin;
+        padding: 14px;
+        font-size: 18px;
+        color: black;
+        border: 1px solid black;
+        border-radius: 10px;
+        transition: background-color 1s, color 1s;
+    }
+    
+    .juice-info a:hover {
+        background-color: black;
+        color: white;
+    }
+    
+    
+    .banana-1 {
+        width: 150px;
+        left: 50px;
+        top: 20px;
+    }
+    
+    .banana-2 {
+        width: 200px;
+        left: 20px;
+        top: 300px;
+    }
+    
+    .banana-3 {
+        width: 200px;
+        right: 480px;
+        top: 370px;
+    }
+    
+    .matcha-1 {
+        width: 150px;
+        left: 300px;
+        top: 60px;
+    }
+    
+    .matcha-2 {
+        width: 200px;
+        left: 30px;
+        top: 300px;
+    }
+    
+    .matcha-3 {
+        width: 200px;
+        right: 500px;
+        top: 300px;
+    }
+    
+    
+    /*map*/
+    
+    .location-wrap {
+        background-color: #ececec;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        padding: 100px 0px;
+    }
+    
+    .map iframe {
+        border: 1px solid black;
+        width: 300px;
+        height: 300px;
+        margin: 10px;
+    }
+    
+    .location-text {
+        text-align: center;
+    }
+    
+    .location-text h3 {
+        font-family: monserrat-bold;
+        font-size: 30px;
+        margin-bottom: 30px;
+    }
+    
+    .location-text p {
+        font-family: monserrat-thin;
+        font-size: 20px;
+    }
+    
+    
+    
+    /*footer*/
+    
+    footer {
+        padding-top: 30px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        color: white;
+    }
+    
+    .footer-hero {
+        font-family: monserrat-light;
+        font-size: 20px;
+        width: 50%;
+        text-align: center;
+    }
+    
+    .footer-main {
+        margin-top: 30px;
+        display: flex;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+    }
+    
+    .footer-main p {
+        margin: 25px;
+        font-family: coco-reg;
+        font-size: 20px;
+    }
+    
+    .footer-main a {
+        letter-spacing: 3px;
+        color: white;
+        text-decoration: none;
+        font-weight: 300;
+    }
+    
+    .footer-main a:hover {
+        color: white;
+        text-decoration: underline;
+    }
+    
+    .footer-bottom {
+        width: 90%;
+        text-align: center;
+        margin-top: 20px;
+        font-family: sans-serif;
+        padding: 10px 0px;
+        border-top: 1px solid white;
+    }
+    
+}
+
+
+@media (max-width: 616px) {
+    nav {
+        z-index: 2;
+        border-bottom: 1px solid black;
+        position: sticky;
+        background-color: white;
+        top: 0px;   
+        background-color: rgba(255, 255, 255, 0.9);
+        backdrop-filter: saturate(180%) blur(20px);
+    }
+    
+    .logo-wrap img {
+        width: 150px;
+        margin-left: 20px;
+        margin-right: 10px;
+    }
+
+    .mobile-nav-wrap {
+        display: block;
+        width: 100%;
+    }
+
+    .logo-wrap {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .main-nav-wrap {
+        display: none;
+    }
+
+    .x-icon img, .hamb-icon img {
+        width: 45px;
+    }
+
+    .x-icon {
+        display: none;
+    }
+
+    .mobile-nav {
+        display: none;
+        border-top: 1px solid black;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        padding: 0px;
+        list-style: none;
+        position: absolute;
+        background-color: rgba(255, 255, 255);
+        width: 100%;
+    }
+
+    .mobile-nav li {
+        margin: 20px 0px;
+    }
+
+    .mobile-nav li a {
+        text-decoration: none;
+        font-family: "coco-reg";
+        font-size: 20px;
+        letter-spacing: 3px;
+        color: black;
+    }
+    
+    
+    .hero-wrap {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        overflow: hidden;
+    }
+    
+    .hero-wrap img {
+        width: 180%;
+    
+    }
+    
+    .hero-text {
+        border-radius: 10px;
+        width: 90%;
+        padding: 10px;
+        background-color: rgba(255, 255, 255, 0.5);
+        backdrop-filter: saturate(180%) blur(20px);
+        position: absolute;
+        z-index: 1;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .hero-text h3 {
+        text-align: center;
+        font-family: monserrat-bold;
+        font-size: 30px;
+        margin: 20px 0px;
+    }
+    
+    .hero-text p {
+        text-align: center;
+        width: 80%;
+        font-family: monserrat-light;
+        font-size: 24px;
+        line-height: 29px;
+        margin-bottom: 20px;
+    }
+    
+    .hero-text a {
+        font-family: monserrat-thin;
+        padding: 10px;
+        margin-bottom: 20px;
+        border: 1px solid black;
+        border-radius: 10px;
+        font-size: 20px;
+        transition: background-color 0.7s, color 0.7s;
+    }
+    
+    .hero-text a:hover {
+        background-color: black;
+        color: white;
+    }
+    
+    /*benefits*/
+    .benefits-wrap {
+        background-color: #ececec;
+        display: flex;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+        padding: 100px 0px;
+    }
+    
+    .benefits-block {
+        margin-top: 20px;
+        margin-bottom: 20px;
+        width: 230px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .benefits-block img {
+        width: 100px;
+    }
+    
+    .benefits-block h3 {
+        font-family: monserrat-bold;
+        font-size: 30px;
+        margin: 10px 0px;
+        text-align: center;
+    }
+    
+    .benefits-block p {
+        font-family: monserrat-light;
+        font-size: 18px;
+        margin: 4px 0px;
+        text-align: center;
+    }
+    
+    
+    /*most popular juice blends*/
+    
+    .popular-wrap {
+        margin-top: 80px;
+    }
+    
+    .popular-hero {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 20px;
+    }
+    
+    .popular-hero h3 {
+        text-align: center;
+        font-family: monserrat-bold;
+        font-size: 30px;
+    }
+    
+    .popular-hero p {
+        font-family: monserrat-light;
+        font-size: 20px;
+        width: 80%;
+        text-align: center;
+    }
+    
+    
+    .circles {
+        height: 0px;
+    }
+    
+    .pomelo-1, .pomelo-2, .pomelo-3, .banana-1, .banana-2, .banana-3, .matcha-1, .matcha-2, .matcha-3 {
+        position: relative;
+        z-index: -1;
+    }
+    
+    .pomelo-1 {
+        width: 100px;
+        left: 60%;
+        top: 20px;
+    }
+    
+    .pomelo-2 {
+        width: 150px;
+        left: 40%;
+        top: 300px;
+    }
+    
+    .pomelo-3 {
+        width: 150px;
+        right: 200px;
+        top: 200px;
+    }
+
+    .product-block {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+    .product-block img {
+        width: 60%;
+    }
+    
+    .juice-wrap {
+        display: block;
+        justify-content: space-evenly;
+        background-color: rgba(255, 255, 255, 0.5);
+        backdrop-filter: saturate(180%) blur(20px);
+    }
+    
+    .juice-info  {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        margin: 20px 0px;
+    }
+    
+    .juice-name {
+        display: flex;
+        justify-content: center;
+        font-family: monserrat-bold;
+        font-size: 40px;
+        text-align: center;
+        margin-bottom: 20px;
+        border-bottom: 3px solid #fdd245;
+        width: fit-content;
+    }
+    
+    .matcha {
+        border-bottom: 3px solid #9accab;
+    }
+    
+    .banana {
+        border-bottom: 3px solid #bbb9a5;
+    }
+    
+    .juice-price {
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        font-size: 30px;
+        text-align: center;
+        margin-bottom: 0px;
+    }
+    
+    .juice-ingredients {
+        font-family: monserrat-thin;
+        font-size: 27px;
+        text-align: center;    
+        margin: 20px 10px 5px 10px;
+    }
+    
+    .juice-description {
+        font-family: monserrat-light;
+        font-size: 16px;
+        text-align: center;
+        margin: 20px 10px 5px 10px;
+    }
+    
+    .juice-info a {
+        font-family: monserrat-thin;
+        padding: 14px;
+        font-size: 18px;
+        color: black;
+        border: 1px solid black;
+        border-radius: 10px;
+        transition: background-color 1s, color 1s;
+    }
+    
+    .juice-info a:hover {
+        background-color: black;
+        color: white;
+    }
+    
+    
+    .banana-1 {
+        width: 100px;
+        left: 0px;
+        top: 20px;
+    }
+    
+    .banana-2 {
+        width: 150px;
+        left: 0px;
+        top: 300px;
+    }
+    
+    .banana-3 {
+        width: 150px;
+        right: 0px;
+        top: 30px;
+    }
+    
+    .matcha-1 {
+        width: 100px;
+        left: 0px;
+        top: 60px;
+    }
+    
+    .matcha-2 {
+        width: 150px;
+        left: 0px;
+        top: 300px;
+    }
+    
+    .matcha-3 {
+        width: 150px;
+        right: 0px;
+        top: 200px;
+    }
+    
+    
+    /*map*/
+    
+    .location-wrap {
+        background-color: #ececec;
+        display: block;
+        justify-content: space-evenly;
+        align-items: center;
+        margin-top: 20px;
+        padding: 100px 0px;
+    }
+
+    .map {
+        display: flex;
+        justify-content: center;
+    }
+    
+    .map iframe {
+        border: 1px solid black;
+        width: 80%;
+        height: 200px;
+        margin: 10px;
+    }
+    
+    .location-text {
+        text-align: center;
+    }
+    
+    .location-text h3 {
+        font-family: monserrat-bold;
+        font-size: 30px;
+        margin-bottom: 30px;
+    }
+    
+    .location-text p {
+        font-family: monserrat-thin;
+        font-size: 20px;
+    }
+    
+    
+    
+    /*footer*/
+    
+    footer {
+        padding-top: 30px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        color: white;
+    }
+    
+    .footer-hero {
+        font-family: monserrat-light;
+        font-size: 20px;
+        width: 70%;
+        text-align: center;
+    }
+    
+    .footer-main {
+        margin-top: 30px;
+        display: flex;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+    }
+    
+    .footer-main p {
+        margin: 25px;
+        font-family: coco-reg;
+        font-size: 20px;
+    }
+    
+    .footer-main a {
+        letter-spacing: 3px;
+        color: white;
+        text-decoration: none;
+        font-weight: 300;
+    }
+    
+    .footer-main a:hover {
+        color: white;
+        text-decoration: underline;
+    }
+    
+    .footer-bottom {
+        width: 90%;
+        text-align: center;
+        margin-top: 20px;
+        font-family: sans-serif;
+        padding: 10px 0px;
+        border-top: 1px solid white;
+    }
+    
+}
+
+
+@media (max-width: 424px) {
+    
+    
+    .hero-wrap {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        overflow: hidden;
+    }
+    
+    .hero-wrap img {
+        width: 200%;
+    
+    }
+    
+    .hero-text {
+        border-radius: 10px;
+        width: 90%;
+        padding: 10px;
+        background-color: rgba(255, 255, 255, 0.5);
+        backdrop-filter: none;
+        position: absolute;
+        z-index: 1;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .hero-text h3 {
+        text-align: center;
+        font-family: monserrat-bold;
+        font-size: 25px;
+        margin: 10px 0px;
+    }
+    
+    .hero-text p {
+        text-align: center;
+        width: 90%;
+        font-family: monserrat-light;
+        font-size: 20px;
+        line-height: 20px;
+        margin-bottom: 20px;
+    }
+    
+    .hero-text a {
+        display: none;
+        font-family: monserrat-thin;
+        padding: 10px;
+        margin-bottom: 20px;
+        border: 1px solid black;
+        border-radius: 10px;
+        font-size: 20px;
+        transition: background-color 0.7s, color 0.7s;
+    }
+    
+    .hero-text a:hover {
+        background-color: black;
+        color: white;
+    }
+    
+    /*benefits*/
+    .benefits-wrap {
+        background-color: #ececec;
+        display: flex;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+        padding: 50px 0px;
+    }
+    
+    .benefits-block {
+        margin-top: 20px;
+        margin-bottom: 20px;
+        width: 230px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .benefits-block img {
+        width: 100px;
+    }
+    
+    .benefits-block h3 {
+        font-family: monserrat-bold;
+        font-size: 30px;
+        margin: 10px 0px;
+        text-align: center;
+    }
+    
+    .benefits-block p {
+        font-family: monserrat-light;
+        font-size: 18px;
+        margin: 4px 0px;
+        text-align: center;
+    }
+    
+    
+    /*most popular juice blends*/
+    
+    .popular-wrap {
+        margin-top: 80px;
+    }
+    
+    .popular-hero {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 20px;
+    }
+    
+    .popular-hero h3 {
+        text-align: center;
+        font-family: monserrat-bold;
+        font-size: 30px;
+    }
+    
+    .popular-hero p {
+        font-family: monserrat-light;
+        font-size: 20px;
+        width: 80%;
+        text-align: center;
+    }
+    
+    
+    .circles {
+        height: 0px;
+    }
+    
+    .pomelo-1, .pomelo-2, .pomelo-3, .banana-1, .banana-2, .banana-3, .matcha-1, .matcha-2, .matcha-3 {
+        position: relative;
+        z-index: -1;
+    }
+    
+    .pomelo-1 {
+        width: 50px;
+        left: 60%;
+        top: 20px;
+    }
+    
+    .pomelo-2 {
+        width: 100px;
+        left: 40%;
+        top: 300px;
+    }
+    
+    .pomelo-3 {
+        width: 100px;
+        right: 200px;
+        top: 200px;
+    }
+
+    .product-block {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+    .product-block img {
+        width: 70%;
+    }
+    
+    .juice-wrap {
+        display: block;
+        justify-content: space-evenly;
+        background-color: rgba(255, 255, 255, 0.5);
+        backdrop-filter: saturate(180%) blur(20px);
+    }
+    
+    .juice-info  {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        margin: 20px 0px;
+    }
+    
+    .juice-name {
+        display: flex;
+        justify-content: center;
+        font-family: monserrat-bold;
+        font-size: 40px;
+        text-align: center;
+        margin-bottom: 20px;
+        border-bottom: 3px solid #fdd245;
+        width: fit-content;
+    }
+    
+    .matcha {
+        border-bottom: 3px solid #9accab;
+    }
+    
+    .banana {
+        border-bottom: 3px solid #bbb9a5;
+    }
+    
+    .juice-price {
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        font-size: 30px;
+        text-align: center;
+        margin-bottom: 0px;
+    }
+    
+    .juice-ingredients {
+        font-family: monserrat-thin;
+        font-size: 27px;
+        text-align: center;    
+        margin: 20px 10px 5px 10px;
+    }
+    
+    .juice-description {
+        font-family: monserrat-light;
+        font-size: 16px;
+        text-align: center;
+        margin: 20px 10px 5px 10px;
+    }
+    
+    .juice-info a {
+        font-family: monserrat-thin;
+        padding: 14px;
+        font-size: 18px;
+        color: black;
+        border: 1px solid black;
+        border-radius: 10px;
+        transition: background-color 1s, color 1s;
+    }
+    
+    .juice-info a:hover {
+        background-color: black;
+        color: white;
+    }
+    
+    
+    .banana-1 {
+        width: 50px;
+        left: 0px;
+        top: 20px;
+    }
+    
+    .banana-2 {
+        width: 100px;
+        left: 0px;
+        top: 300px;
+    }
+    
+    .banana-3 {
+        width: 100px;
+        right: 0px;
+        top: 30px;
+    }
+    
+    .matcha-1 {
+        width: 50px;
+        left: 0px;
+        top: 60px;
+    }
+    
+    .matcha-2 {
+        width: 100px;
+        left: 0px;
+        top: 300px;
+    }
+    
+    .matcha-3 {
+        width: 100px;
+        right: 0px;
+        top: 200px;
+    }
+    
+    
+    /*map*/
+    
+    .location-wrap {
+        background-color: #ececec;
+        display: block;
+        justify-content: space-evenly;
+        align-items: center;
+        margin-top: 20px;
+        padding: 40px 0px;
+    }
+
+    .map {
+        display: flex;
+        justify-content: center;
+    }
+    
+    .map iframe {
+        border: 1px solid black;
+        width: 80%;
+        height: 200px;
+        margin: 10px;
+    }
+    
+    .location-text {
+        text-align: center;
+    }
+    
+    .location-text h3 {
+        font-family: monserrat-bold;
+        font-size: 30px;
+        margin-bottom: 30px;
+    }
+    
+    .location-text p {
+        font-family: monserrat-thin;
+        font-size: 20px;
+    }
+    
+    
+    
+    /*footer*/
+    
+    footer {
+        padding-top: 30px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        color: white;
+    }
+    
+    .footer-hero {
+        font-family: monserrat-light;
+        font-size: 20px;
+        width: 70%;
+        text-align: center;
+    }
+    
+    .footer-main {
+        margin-top: 30px;
+        display: flex;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+    }
+    
+    .footer-main p {
+        margin: 25px;
+        font-family: coco-reg;
+        font-size: 20px;
+    }
+    
+    .footer-main a {
+        letter-spacing: 3px;
+        color: white;
+        text-decoration: none;
+        font-weight: 300;
+    }
+    
+    .footer-main a:hover {
+        color: white;
+        text-decoration: underline;
+    }
+    
+    .footer-bottom {
+        width: 90%;
+        text-align: center;
+        margin-top: 20px;
+        font-family: sans-serif;
+        padding: 10px 0px;
+        border-top: 1px solid white;
+    }
+    
+}
